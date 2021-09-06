@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+
+body {
+  background-color: #161617;
+}
+
+/* Navbar Start here */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 0.5% 0;
+}
+
+.nav_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25%;
+  font-family: "ZCOOL KuaiLe", cursive !important;
+  font-size: 150%;
+}
+
+.nav_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0.6%;
+}
+
+.nav_items ul li {
+  display: inline-block;
+  /* border: 1px solid black; */
+  padding: 0 !important; /* To Reset bootstrap padding */
+  padding: 0.5% 7% !important;
+  text-transform: capitalize;
+  margin: 0 0.5%;
+  color: white;
+  font-size: 120%;
+}
+
+.nav_items ul {
+  margin: 0 !important; /* To reset bootstrap margin */
+  padding: 0 !important; /* To reset bootstrap margin */
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_contact_me_button {
+  width: 25%;
+}
+
+.nav_contact_me_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5%;
+}
+
+.nav_contact_me_button a {
+  text-decoration: none;
+  padding: 1.5% 3%;
+  color: white;
+  transition: 0.4s;
+  box-shadow: 0 0 2px 1.5px white;
+}
+
+.nav_contact_me_button a:hover {
+  transform: scale(1.04);
+}
+
+/* Navbar ends here */
+
+.first_section {
+  margin-top: 5rem !important;
+  height: 70vh;
+  width: 80%;
+  margin: auto;
+  color: white;
+  animation: backtotop 1s;
+  position: relative;
+}
+
+.first_section_top_heading {
+  text-align: left;
+  font-size: 250%;
+}
+.first_section_sub_heading {
+  font-size: 150%;
+}
+
+.downArrow {
+  position: absolute;
+  /* border: 1px solid white; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  font-size: 240%;
+  text-transform: uppercase;
+  animation-name: down;
+  animation-delay: 0ms;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.svg{
+    display: flex;
+}
+
+@keyframes backtotop {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
