@@ -114,7 +114,7 @@
             <div class="col my-3">
                 <div class="card border">
                     <div class="card_image">
-                        <img src="./Images/sample.jpg" alt="" srcset="">
+                        <img src="" alt="" srcset="">
                     </div>
                     <div class="openContent">
                         <div class="cardContent">
@@ -162,4 +162,12 @@
 <script src="./Bootstrap/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/5f58e39607.js" crossorigin="anonymous"></script>
 
+
+<script>
+    $(document).ready(()=>{
+        $.getJSON("./data.json", (data)=>{
+            console.log(`data`, data)
+        })
+    })
+</script>
 </html>
