@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap"); */
 
 body {
   background-color: #161617;
 }
+
+
 
 /* Navbar Start here */
 nav {
@@ -17,7 +19,7 @@ nav {
   align-items: center;
   color: white;
   width: 25%;
-  font-family: "ZCOOL KuaiLe", cursive !important;
+  font-family: "myFirstFont", cursive !important;
   font-size: 150%;
 }
 
@@ -38,6 +40,7 @@ nav {
   margin: 0 0.5%;
   color: white;
   font-size: 120%;
+  font-weight: 500;
 }
 
 .nav_items ul {
@@ -72,67 +75,3 @@ nav {
 }
 
 /* Navbar ends here */
-
-.first_section {
-  margin-top: 5rem !important;
-  height: 70vh;
-  width: 80%;
-  margin: auto;
-  color: white;
-  animation: backtotop 1s;
-  position: relative;
-}
-
-.first_section_top_heading {
-  text-align: left;
-  font-size: 250%;
-}
-.first_section_sub_heading {
-  font-size: 150%;
-}
-
-.downArrow {
-  position: absolute;
-  /* border: 1px solid white; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: white;
-  flex-direction: column;
-  align-items: center;
-  bottom: 0;
-  font-size: 240%;
-  text-transform: uppercase;
-  animation-name: down;
-  animation-delay: 0ms;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-
-.svg{
-    display: flex;
-}
-
-@keyframes backtotop {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes down{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(10px);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
-}

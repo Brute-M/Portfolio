@@ -1,0 +1,148 @@
+/* Second starts here */
+
+.second_section {
+  color: white;
+  height: 150vh;
+  /* border: 1px solid red; */
+}
+
+.card {
+  height: 60vh;
+  background-color: transparent !important;
+  width: 100%;
+  position: relative;
+}
+
+.card .card_image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+  object-fit: cover;
+}
+.card_image img {
+  height: inherit;
+  width: inherit;
+  transition: 0.5s;
+  /* opacity: 0.5; */
+  transform: scale(1.2);
+}
+
+.card:hover .card_image img {
+  opacity: 0.9;
+  transform: scale(1);
+  filter: blur(5px);
+}
+
+.card .card_info {
+  height: 100%;
+  width: 100%;
+}
+
+.card .openContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.card:hover .openContent {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 30%;
+}
+
+.card .openContent:hover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.card .openContent .icon {
+  transition: 0.5s;
+}
+
+.cardContent {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0 1.5rem;
+  transition: 1s;
+  transition-delay: 0.5s;
+  opacity: 0;
+}
+
+.openContent:hover .cardContent {
+  opacity: 1;
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.cardButtons div {
+  border: 1px solid white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gitHubButton {
+  background-color: #161b22;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+.gitHubButton:hover {
+  width: 25%;
+}
+
+.cardButtons div:hover .forward {
+  opacity: 1;
+}
+
+.gitHubButton img {
+  height: 22px;
+  filter: invert(1);
+  float: left;
+}
+
+.gitHubButton span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContent .forward {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+}
+
+.projectButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15%;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+}
+.projectButton:hover {
+  width: 20%;
+}

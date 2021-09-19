@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "Write Way",
+        "desc" : [
+            "Created a social media platform with core PHP only, no framework or library used.Database used MySQL",
+            "Write way is a platform, where people can come across form all over the world to exploretheir proposal, thoughts and much more that could evolve in one's mind. Moreover theBibliomanias vists to experience new era of reading and writing platform."
+        ],
+        "projectLink" : "https://writeway.epizy.com",
+        "githubLink" : false
+
+    }
+]
