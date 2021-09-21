@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Write Way",
+        "img": "./Projects/Writeway.jpg",
+        "descs": [
+            "Created a social media platform with core PHP only, no framework or library used.Database used MySQL",
+            "Write way is a platform, where people can come across form all over the world to exploretheir proposal, thoughts and much more that could evolve in one's mind. Moreover theBibliomanias vists to experience new era of reading and writing platform."
+        ],
+        "githubLink": false,
+        "projectLink": "https://writeway.epizy.com",
+        "themeColor": "#4facfe"
+    },
+    {
+        "title": "Dictionary",
+        "img": "./Projects/Dictionary.jpg",
+        "descs": [
+            "Created dictionary app using React and free API <a href='https://dictionaryapi.dev/'>dictionaryapi</a>",
+            "A dictionary is a listing of lexemes from the lexicon of one or more specific languages, often arranged alphabetically, which may include information on definitions, usage, etymologies, pronunciations, translation, etc.. It is a lexicographical reference that shows inter-relationships among the data"
+        ],
+        "githubLink": "https://github.com/Brute-M/MyDictionary",
+        "projectLink": "https://brute-m.github.io/MyDictionary/",
+        "themeColor": false
+    },
+    {
+        "title": "Newsapp",
+        "img": "./Projects/Newsapp.jpg",
+        "descs": [
+            "Created News app using React and <a href='https://newsapi.org'>Newsapi<a/>",
+            "For those who love reading daily news can use this. I use this personally!",
+            "<b>Reason why it isn't hosted because newsapi provide its free service till localhost for development only!<b/>"
+        ],
+        "githubLink": "https://github.com/Brute-M/newsapp",
+        "projectLink": false,
+        "themeColor": false
+    },
+    {
+        "title": "Foodexpress",
+        "img": "./Projects/Foodexpress.jpg",
+        "descs": [
+            "Created dummy food ordering site using Code HTML, CSS only",
+            "Fully responsive and applicable to all devices with frest UI degisn, Glassy type"
+        ],
+        "githubLink": "https://github.com/Brute-M/newsapp",
+        "projectLink": "https://brute-m.github.io/Foodexpress/",
+        "themeColor": "#dfc14a"
+    }
+]

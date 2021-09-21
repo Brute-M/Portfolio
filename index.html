@@ -80,8 +80,10 @@
 
     <!-- Second section starts from here i.e my projects -->
     <div class="second_section container">
-        <div class="row row-cols-2">
-            <div class="col my-3">
+        <div class="row row-cols-2" id="allCards">
+            <!-- All cards will be displayed here! -->
+
+            <!-- <div class="col my-3">
                 <div class="card border">
                     <div class="card_image">
                         <img src="./Projects/Writeway.jpg" alt="" srcset="">
@@ -109,36 +111,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col my-3">
-                <div class="card border">
-                    <div class="card_image">
-                        <img src="" alt="" srcset="">
-                    </div>
-                    <div class="openContent">
-                        <div class="cardContent">
-                            <h2>Title</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consectetur fuga
-                                suscipit corrupti et dicta, rem facilis dolores voluptate dolorum obcaecati sed dolorem
-                                dolore adipisci reprehenderit eos inventore quaerat autem.</p>
-                            <div class="cardButtons">
-                                <div class="gitHubButton mx-2">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
-                                        alt="">
-                                    <span class="mx-1">GitHub</span>
-                                    <span class="forward mx-1"><i class="fas fa-arrow-circle-right"></i></span>
-                                </div>
-                                <div class="projectButton mx-1">
-                                    <span>Project</span>
-                                    <span class="forward mx-2"><i class="fas fa-arrow-circle-right"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </div> -->
         </div>
     </div>
 
@@ -161,13 +134,7 @@
 
 <script src="./Bootstrap/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/5f58e39607.js" crossorigin="anonymous"></script>
+<script type="module" src="./JS/main.js"></script>
 
 
-<script>
-    $(document).ready(()=>{
-        $.getJSON("./data.json", (data)=>{
-            console.log(`data`, data)
-        })
-    })
-</script>
 </html>
