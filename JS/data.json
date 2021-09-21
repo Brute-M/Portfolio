@@ -43,5 +43,17 @@
         "githubLink": "https://github.com/Brute-M/newsapp",
         "projectLink": "https://brute-m.github.io/Foodexpress/",
         "themeColor": "#dfc14a"
+    },
+    {
+        "title": "Postman MINI",
+        "img": "./Projects/Postmanmini.jpg",
+        "descs": [
+            "Created Postman clone but mini one with only GET AND POST Requests.",
+            "I know it's it not completed but i'll do it later but it it works Awesome for basic requests",
+            "This is isn't hosted because making request from others server is pain in the ass. I created this only and only for development purpose"
+        ],
+        "githubLink": "https://github.com/Brute-M/PostMan-Mini",
+        "projectLink": false,
+        "themeColor": false
     }
 ]
