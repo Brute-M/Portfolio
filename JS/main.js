@@ -10,3 +10,27 @@ $.getJSON("./JS/data.json", data => {
         card.appendCard(newCard)
     })
 });
+
+var scroll = 0;
+$(window).scroll(()=>{
+    let lastScroll = $(window).scrollTop();
+    console.log('lastScroll :>> ', lastScroll);
+    // if(lastScroll > scroll){
+    //     console.log("DOWN");
+    //     document.querySelector(".nav_name").style.transform = "translateY(-4rem)"
+    // }
+    // if(lastScroll < scroll){
+    //     console.log("UP");
+    //     document.querySelector(".nav_name").style.transform = "translateY(0)"
+
+    // }
+    if(lastScroll > 600){
+        document.querySelector(".nav_name").style.transform = "translateY(0)"
+        // translate(-4rem, -3rem);
+    }
+    else if(lastScroll < 600){
+        document.querySelector(".nav_name").style.transform = "translateY(-4rem)"
+    }
+    scroll = lastScroll
+})
+

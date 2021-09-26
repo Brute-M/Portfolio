@@ -2,14 +2,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 3rem !important;
-    height: 80vh;
+    height: 100vh;
     width: 80%;
     margin: auto;
     color: white;
     animation: backtotop 1s;
+    padding-top: 6rem;
   }
-  
+
+  .first_section_background_image::before{
+    content: "";
+    background: url(https://images.pexels.com/photos/1643280/pexels-photo-1643280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
   .first_section_top_heading {
     text-align: left;
     font-size: 250%;
