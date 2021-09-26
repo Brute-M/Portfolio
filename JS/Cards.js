@@ -3,20 +3,11 @@ class Cards {
         this.divID = divID
     }
     
-    getDescs(descs){
-        let d = ""
-        descs.forEach(e=>{
-            d += "<p>" + e + " </p>"
-        })
-        console.log(`d`, d)
-        return d
-    }
 
     createCard(data) {
         let cardElement = document.createElement("div");
         const { title, descs, projectLink, githubLink, img, themeColor } = data
-
-        
+  
 
         let cardHTML = `
                         <div class="col my-3">
@@ -28,7 +19,6 @@ class Cards {
                                     <div class="cardContent">
                                         <h2>${title}</h2>
                                         ${
-                                            // this.getDescs(descs)
                                             descs.map(e=>{
                                                 return "<p>" + e + " </p>"
                                             }).join('')
