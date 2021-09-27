@@ -2,10 +2,15 @@
 
 .second_section {
     color: white;
-    height: 150vh;
+    height: 100vh;
     /* border: 1px solid red; */
+    transition: all 1s cubic-bezier(0.72, 0.21, 0.32, 0.99) 0s;
+    overflow: auto;
 }
 
+.second_section::-webkit-scrollbar {
+    display: none;
+  }
 .card {
     height: 60vh;
     background-color: transparent !important;
