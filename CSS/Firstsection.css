@@ -10,7 +10,7 @@
     padding-top: 6rem;
   }
 
-  .first_section_background_image::before{
+  .first_section_parent::before{
     content: "";
     background: url(https://images.pexels.com/photos/1643280/pexels-photo-1643280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-repeat: no-repeat;
@@ -26,6 +26,7 @@
   .first_section_top_heading {
     text-align: left;
     font-size: 250%;
+    transition: 1.5s linear;
   }
   .first_section_sub_heading {
     font-size: 150%;

@@ -13,8 +13,10 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #60606229;
-  backdrop-filter: saturate(180%) blur(5px);
   z-index: 10;
+}
+.backdropOwn{
+  backdrop-filter: saturate(180%) blur(5px);
 }
 
 .nav_name {
@@ -26,7 +28,8 @@ nav {
   font-family: "myFirstFont", cursive !important;
   font-size: 150%;
   transition: 0.5s;
-  transform: translateY(-4rem);
+  /* transform: translateY(-4rem); */
+  opacity: 0;
 }
 
 .nav_items {

@@ -28,12 +28,16 @@
             font-family: myFirstFont;
             src: url(../Fonts/ZCOOLKuaiLe-Regular.ttf);
         }
+        body{
+            overflow: hidden;
+            overflow-anchor:unset;
+        }
     </style>
 </head>
 
 <body>
     <!-- Navbar  -->
-    <nav>
+    <nav class="backdropOwn">
         <!-- First section of navbar -->
         <div class="nav_name">
             <div>Dilpreet Singh</div>
@@ -57,7 +61,7 @@
     </nav>
 
     <!-- First section starts from here i.e photo and about -->
-    <div style="width: 100%; position: relative;" class="first_section_background_image">
+    <div style="width: 100%; position: relative; transition: all 1s cubic-bezier(0.72, 0.21, 0.32, 0.99) 0s;" class="first_section_parent">
         <div class="first_section">
             <div class="first_section_top_heading">
                 <p>Hi, I'm Dilpreet Singh</p>
