@@ -10,12 +10,12 @@ class Cards {
   
 
         let cardHTML = `
-                        <div class="col my-3">
-                            <div class="card border">
+                        <div class="col my-3" >
+                            <div class="card border"  data-tilt-glare data-tilt-max-glare="0.8">
                                 <div class="card_image">
                                     <img class="img-fluid" src="${img}" alt="" srcset="">
                                 </div>
-                                <div class="openContent">
+                                <div class="openContent" >
                                     <div class="cardContent">
                                         <h2>${title}</h2>
                                         ${

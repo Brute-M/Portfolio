@@ -28,9 +28,10 @@
             font-family: myFirstFont;
             src: url(../Fonts/ZCOOLKuaiLe-Regular.ttf);
         }
-        body{
+
+        body {
             overflow: hidden;
-            overflow-anchor:unset;
+            overflow-anchor: unset;
         }
     </style>
 </head>
@@ -55,13 +56,14 @@
         </div>
 
         <!-- Last section of navbar -->
-        <div class="nav_contact_me_button">
+        <div class="nav_contact_me_button" data-tilt>
             <a href="">Contact Me</a>
         </div>
     </nav>
 
     <!-- First section starts from here i.e photo and about -->
-    <div style="width: 100%; position: relative; transition: all 1s cubic-bezier(0.72, 0.21, 0.32, 0.99) 0s;" class="first_section_parent">
+    <div style="width: 100%; position: relative; transition: all 1s cubic-bezier(0.72, 0.21, 0.32, 0.99) 0ms;"
+        class="first_section_parent">
         <div class="first_section">
             <div class="first_section_top_heading">
                 <p>Hi, I'm Dilpreet Singh</p>
@@ -124,8 +126,17 @@
     </div>
 
     </div>
+    <script type="module" src="./JS/main.js"></script>
 
+    <script src="./Plugins/vanila-tilt.js"></script>
 
+    <script defer type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+
+    </script>
 </body>
 
 
@@ -142,7 +153,7 @@
 
 <script src="./Bootstrap/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/5f58e39607.js" crossorigin="anonymous"></script>
-<script type="module" src="./JS/main.js"></script>
+
 
 
 </html>

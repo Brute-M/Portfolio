@@ -4,8 +4,9 @@
     color: white;
     height: 100vh;
     /* border: 1px solid red; */
-    transition: all 1s cubic-bezier(0.72, 0.21, 0.32, 0.99) 0s;
+    transition: all 1s cubic-bezier(0.72, 0.21, 0.32, 0.99) 0ms;
     overflow: auto;
+    padding: 5rem 0;
 }
 
 .second_section::-webkit-scrollbar {
