@@ -1,13 +1,13 @@
 class Cards {
-    constructor(divID /* Div ID where to append all the cards */ ) {
+    constructor(divID /* Div ID where to append all the cards */) {
         this.divID = divID
     }
-    
+
 
     createCard(data) {
         let cardElement = document.createElement("div");
         const { title, descs, projectLink, githubLink, img, themeColor } = data
-  
+
 
         let cardHTML = `
                         <div class="col my-3">
@@ -18,11 +18,10 @@ class Cards {
                                 <div class="openContent">
                                     <div class="cardContent">
                                         <h2>${title}</h2>
-                                        ${
-                                            descs.map(e=>{
-                                                return "<p>" + e + " </p>"
-                                            }).join('')
-                                        }
+                                        ${descs.map(e => {
+            return "<p>" + e + " </p>"
+        }).join('')
+            }
                                         <div class="cardButtons">
                                             <button class="btn gitHubButton mx-2" onclick="window.open('${!githubLink ? "#" : githubLink}')" ${!githubLink ? "disabled='true'" : ""}>
                                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"

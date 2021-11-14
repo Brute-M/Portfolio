@@ -28,7 +28,7 @@ nav {
   font-family: "myFirstFont", cursive !important;
   font-size: 150%;
   transition: 0.5s;
-  /* transform: translateY(-4rem); */
+  transform: translateY(-4rem);
   opacity: 0;
 }
 
